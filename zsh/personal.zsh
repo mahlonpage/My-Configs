@@ -1,6 +1,6 @@
 #My Aliases
 alias c='clear'
-alias cs='cd ~/Documents/git_lc/'
+alias cs='cd ~/Documents/cs/'
 alias z='cd ~/dot-files/zsh; ls'
 alias v='code .'
 alias s='sqlite3'
