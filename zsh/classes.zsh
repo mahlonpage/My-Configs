@@ -22,10 +22,15 @@ function dlnc()   {
 }
 
 function cybernc()   {
-    cd ${COURSE_LOC}cyber/dev-env/
+    cd ${COURSE_LOC}cyber/dev-env/home/
+}
+
+function resnc()    {
+    cd ~/Desktop/Research/    
 }
 
 #Current Courses (but also opens vscode)
 alias data='datanc; code .;'
 alias dl='dlnc; code .;'
 alias cyber='cybernc; code .;'
+alias res='resnc; code .;'

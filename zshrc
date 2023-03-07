@@ -44,5 +44,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+#Sets Java 1.8 for PySpark for Data Science Project MapReduce
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home
+
 #Loads in zsh preferences from zsh folder (divided into files for ease of access)
 for config (~/dot-files/zsh/*.zsh) source $config
