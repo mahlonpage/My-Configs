@@ -2,7 +2,7 @@ set whichwrap+=<,>,h,l
 syntax on 
 filetype plugin indent on
 
-colorscheme torte 
+colorscheme koehler
 
 " Add line numbers, coloring
 set number
