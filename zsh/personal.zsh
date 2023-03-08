@@ -28,9 +28,9 @@ function z()    {
       vim ~/dot-files/zshrc
       ;; 
     "h")
-    echo "Options: p (personal), c (class), conda, norm (~/.zshrc), h (help)"
+      echo "Options: p (personal), c (class), conda, norm (~/.zshrc), h (help)"
       ;;
-     *)
+    *)
       cd ~/dot-files/
       ;;
   esac

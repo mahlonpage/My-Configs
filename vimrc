@@ -1,10 +1,19 @@
-set whichwrap+=<,>,[,]
-syntax on
-
+set whichwrap+=<,>,h,l
+syntax on 
 filetype plugin indent on
-" show existing tab with 4 spaces width
-set tabstop=4
-" when indenting with '>', use 4 spaces width
-set shiftwidth=4
-" On pressing tab, insert 4 spaces
+
+colorscheme torte 
+
+" Add line numbers, coloring
+set number
+highlight LineNr ctermfg=grey
+
+" Tabstop represented as 4 spaces 
+set tabstop=4 
+" 4 space indents
+set shiftwidth=4 smarttab
+" Auto-replace tabs with spaces
 set expandtab
+set ai "Auto indent
+set si "Smart indent
+set wrap "Wrap line
