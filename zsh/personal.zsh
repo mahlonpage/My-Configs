@@ -11,7 +11,24 @@ alias a='/Users/mahlonpage/Documents/cs/tuningfork/venv/bin/python3 /Users/mahlo
 #Shows song Zack is listening to.
 alias zack='/Users/mahlonpage/Documents/cs/tuningfork/venv/bin/python3 /Users/mahlonpage/Documents/cs/tuningfork/enqueue.py -zi'
 
-#My Functions
+# My functions
+
+# Restart terminal in ~/ and reset to default venv and conda
+function def()  {
+  cd ~/
+  $aliases[c]
+  conda deactivate &> /dev/null
+  deactivate &> /dev/null
+  exec $SHELL -l
+}
+
+# Git add, commit with message, push
+function gall() {
+  git add -A
+  git commit -m "$([ "$1" != "" ] && echo "$1" || echo "minor tweak")"
+  git push
+}
+
 function z()    {
   case "$1" in
 
@@ -24,28 +41,22 @@ function z()    {
     "conda")
       vim ~/dot-files/zsh/conda.zsh
       ;;
+    "vim")
+      vim ~/dot-files/zsh/vim.zsh
+      ;;
     "norm") 
       vim ~/dot-files/zshrc
       ;; 
     "h")
-      echo "Options: p (personal), c (class), conda, norm (~/.zshrc), h (help)"
+      echo "Options: p (personal)"
+      echo "         c (class)"
+      echo "         norm (~/.zshrc)"
+      echo "         vim" 
+      echo "         conda"
+      echo "         h (help)"
       ;;
     *)
       cd ~/dot-files/
       ;;
   esac
 }
-function def()  {
-  cd ~/
-  $aliases[c]
-  conda deactivate &> /dev/null
-  deactivate &> /dev/null
-  exec $SHELL -l
-}
-
-function gall() {
-  git add -A
-  git commit -m "$([ "$1" != "" ] && echo "$1" || echo "minor tweak")"
-  git push
-}
-
