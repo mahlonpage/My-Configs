@@ -14,26 +14,43 @@ alias ibrew="arch -x86_64 /usr/local/bin/brew"
 
 export COURSE_LOC=~/Documents/cs/curr_classes/ #Course folder location
 
-function datanc() {
-    source ~/cs1951a_venv/bin/activate
-    cd ${COURSE_LOC}data/
+function cdclass() {
+    case $1 in
+
+        "data")
+            cd ${COURSE_LOC}data/
+            ;;
+        "cyber")
+            cd ${COURSE_LOC}cyber/dev-env/home/
+            ;;
+        "dl")
+            cd ${COURSE_LOC}dl/
+            ;;
+        *)
+            echo "Error: Usage cdclass with arg1 = data, cyber, dl"
+    esac
 }
 
-function dlnc()   {
+function data() {
+    source ${COURSE_LOC}data/cs1951a_venv/bin/activate
+    cdclass data
+}
+
+function dl()   {
     conda activate csci1470
-    cd ${COURSE_LOC}dl/
+    cdclass dl
 }
 
-function cybernc()   {
-    cd ${COURSE_LOC}cyber/dev-env/home/
+function cyber()   {
+    cdclass cyber
 }
 
-function resnc()    {
+function res()    {
     cd ~/Desktop/Research/    
 }
 
 #Current Courses (but also opens vscode)
-alias data='datanc; code .;'
-alias dl='dlnc; code .;'
-alias cyber='cybernc; code .;'
-alias res='resnc; code .;'
+alias datac='data; code .;'
+alias dlc='dl; code .;'
+alias cyberc='cyber; code .;'
+alias resc='res; code .;'

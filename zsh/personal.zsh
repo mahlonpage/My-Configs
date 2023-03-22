@@ -30,33 +30,37 @@ function gall() {
 }
 
 function z()    {
-  case "$1" in
+    case "$1" in
 
-    "p")
-      vim ~/dot-files/zsh/personal.zsh
-      ;;
-    "c")
-      vim ~/dot-files/zsh/classes.zsh
-      ;;
-    "conda")
-      vim ~/dot-files/zsh/conda.zsh
-      ;;
-    "vim")
-      vim ~/dot-files/zsh/vim.zsh
-      ;;
-    "norm") 
-      vim ~/dot-files/zshrc
-      ;; 
-    "h")
-      echo "Options: p (personal)"
-      echo "         c (class)"
-      echo "         norm (~/.zshrc)"
-      echo "         vim" 
-      echo "         conda"
-      echo "         h (help)"
-      ;;
-    *)
-      cd ~/dot-files/
-      ;;
+        "c")
+            vim ~/dot-files/zsh/classes.zsh
+            ;;
+        "p")
+            vim ~/dot-files/zsh/personal.zsh
+            ;;
+        "conda")
+            vim ~/dot-files/zsh/conda.zsh
+            ;;
+        "ssh")
+            vim ~/dot-files/zsh/ssh.zsh
+            ;;
+        "vim")
+            vim ~/dot-files/zsh/vim.zsh
+            ;;
+        "norm")
+            vim ~/dot-files/zshrc
+            ;;
+        "h")
+            echo "Options: p (personal)"
+            echo "         c (class)"
+            echo "         norm (~/.zshrc)"
+            echo "         ssh"
+            echo "         vim"
+            echo "         conda"
+            echo "         h (help)"
+            ;;
+        *)
+            cd ~/dot-files/
+            ;;
   esac
 }
