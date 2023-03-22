@@ -46,7 +46,7 @@ function cyber()   {
 }
 
 function res()    {
-    cd ~/Desktop/Research/    
+    cd ~/Documents/cs/curr_classes/research
 }
 
 #Current Courses (but also opens vscode)
