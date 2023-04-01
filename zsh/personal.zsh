@@ -4,7 +4,7 @@ alias cs='cd ~/Documents/cs/'
 alias v='code .'
 alias s='sqlite3'
 alias p='python3'
-alias ls='lsd'
+alias ls='lsd' #use lsd for nicer appearance
 
 #Enqueue
 #Takes song Zack is currently listening to and adds it to my playlist
