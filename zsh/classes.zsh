@@ -18,13 +18,13 @@ function cdclass() {
     case $1 in
 
         "data")
-            cd ${COURSE_LOC}data/
+            cd ${COURSE_LOC}data
             ;;
         "cyber")
-            cd ${COURSE_LOC}cyber/dev-env/home/
+            cd ${COURSE_LOC}cyber/dev-env/home/pr03-handin-mahlonpage
             ;;
         "dl")
-            cd ${COURSE_LOC}dl/
+            cd ${COURSE_LOC}dl/hw4-mahlonpage
             ;;
         *)
             echo "Error: Usage cdclass with arg1 = data, cyber, dl"
@@ -32,7 +32,7 @@ function cdclass() {
 }
 
 function data() {
-    source ${COURSE_LOC}data/cs1951a_venv/bin/activate
+    source ~/cs1951a_venv/bin/activate
     cdclass data
 }
 

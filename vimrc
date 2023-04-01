@@ -6,8 +6,8 @@ syntax on "Syntax highlighting
 "Colorscheme
 colorscheme koehler
 
-"Add line numbers, coloring
-set number
+"Add relative line numbers, coloring
+set relativenumber
 highlight LineNr ctermfg=grey
 
 "Indenting/spacing
