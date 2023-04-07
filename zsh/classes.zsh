@@ -18,13 +18,13 @@ function cdclass() {
     case $1 in
 
         "data")
-            cd ${COURSE_LOC}data
+            cd ${COURSE_LOC}data/ml-mahlonpage
             ;;
         "cyber")
-            cd ${COURSE_LOC}cyber/dev-env/home/pr03-handin-mahlonpage
+            cd ${COURSE_LOC}cyber/dev-env/home
             ;;
         "dl")
-            cd ${COURSE_LOC}dl/hw4-mahlonpage
+            cd ${COURSE_LOC}dl/hw5-mahlonpage
             ;;
         *)
             echo "Error: Usage cdclass with arg1 = data, cyber, dl"

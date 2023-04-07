@@ -4,7 +4,8 @@ alias cs='cd ~/Documents/cs/'
 alias v='code .'
 alias s='sqlite3'
 alias p='python3'
-alias ls='lsd' #use lsd for nicer appearance
+alias ls='lsd' #use lsd for pretty printing
+alias please='sudo $(fc -ln -1)'
 
 #Enqueue
 #Takes song Zack is currently listening to and adds it to my playlist

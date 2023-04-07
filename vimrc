@@ -6,9 +6,10 @@ syntax on "Syntax highlighting
 "Colorscheme
 colorscheme koehler
 
-"Add relative line numbers, coloring
+"Add relative line numbers, coloring, ruler
 set relativenumber
 highlight LineNr ctermfg=grey
+set ruler
 
 "Indenting/spacing
 set tabstop=4 "Tabstop = as 4 spaces
