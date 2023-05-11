@@ -16,8 +16,10 @@ alias sshccv='ssh mpage7@ssh.ccv.brown.edu' #ssh into ccv (oscar)
 #ssh into brown cs with first argument being computer preference
 function sshcs() {
     if [ -z "$1" ]; then
+        ssh -t mpage7@ssh.cs.brown.edu host=aluminum
+    elif [ "$1" = "random" ]; then
         ssh mpage7@ssh.cs.brown.edu
-    else 
+    else
         ssh -t mpage7@ssh.cs.brown.edu host=$1
     fi
 }

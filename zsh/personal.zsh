@@ -1,7 +1,6 @@
 #My Aliases
 alias c='clear'
 alias cs='cd ~/Documents/cs/'
-alias v='code .'
 alias s='sqlite3'
 alias p='python3'
 alias ls='lsd' #use lsd for pretty printing
