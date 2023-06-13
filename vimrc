@@ -6,8 +6,8 @@ syntax on "Syntax highlighting
 "Colorscheme
 colorscheme koehler
 
-"Add relative line numbers, coloring, ruler
-set relativenumber
+"Add hybrid line numbers (relative except line cursor on), coloring, ruler
+set number relativenumber
 highlight LineNr ctermfg=grey
 set ruler
 
