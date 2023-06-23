@@ -42,3 +42,4 @@ for config (~/dot-files/zsh/*.zsh) source $config
 #Enables vi and restores default non-vi search behavior after
 #bindkey ^R history-incremental-search-backward
 #bindkey ^S history-incremental-search-forward
+
