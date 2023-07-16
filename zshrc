@@ -19,7 +19,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-open vi-mode)
+plugins=(git git-open)
 
 source $ZSH/oh-my-zsh.sh
 
