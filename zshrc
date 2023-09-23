@@ -43,3 +43,5 @@ for config (~/dot-files/zsh/*.zsh) source $config
 #bindkey ^R history-incremental-search-backward
 #bindkey ^S history-incremental-search-forward
 
+
+source /Users/mahlonpage/.docker/init-zsh.sh || true # Added by Docker Desktop

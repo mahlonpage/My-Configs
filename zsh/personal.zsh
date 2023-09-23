@@ -4,7 +4,7 @@ alias cs='cd ~/Documents/cs/'
 alias s='sqlite3'
 alias p='python3'
 alias ls='lsd' #use lsd for pretty printing
-alias please='sudo $(fc -ln -1)'
+alias opt='source ./Documents/cs/HFT\ Researcher\ Assessment/optiver/bin/activate'
 
 function regex()    {
     /usr/local/bin/python3 /Users/mahlonpage/Documents/cs/rENGex/code/rENGex.py $@
