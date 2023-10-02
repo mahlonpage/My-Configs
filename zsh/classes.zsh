@@ -15,7 +15,7 @@ function cdclass() {
             cd ${COURSE_LOC}formal\ proof/fpv2023
             ;;
         "data")
-            cd ${COURSE_LOC}databases
+            cd ${COURSE_LOC}databases/dbms-stencil-mahlonpage
             ;;
         *)
             echo "Error: Usage cdclass with arg1 = data, cyber, dl"
