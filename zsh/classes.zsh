@@ -14,9 +14,6 @@ function cdclass() {
         "formal")
             cd ${COURSE_LOC}formal\ proof/fpv2023
             ;;
-        "data")
-            cd ${COURSE_LOC}databases/dbms-stencil-mahlonpage
-            ;;
         *)
             echo "Error: Usage cdclass with arg1 = data, cyber, dl"
     esac
@@ -26,15 +23,10 @@ function formal() {
     cdclass formal
 }
 
-function data()   {
-    cdclass data
-}
-
 function res()    {
     cd ~/Documents/cs/curr_classes/research
 }
 
 #Current Courses (but also opens vscode)
-alias datac='data; code .;'
 alias formalc='formal; code .;'
 alias resc='res; code .;'
