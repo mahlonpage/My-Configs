@@ -10,7 +10,7 @@ function regex()    {
 }
 
 #Enqueue
-MUSIC='/Users/mahlonpage/Documents/cs/z\ Tuningfork/venv/bin/python3 /Users/mahlonpage/Documents/cs/z\ Tuningfork/enqueue.py'
+MUSIC='/Users/mahlonpage/Documents/cs/z_tuningfork/venv/bin/python3 /Users/mahlonpage/Documents/cs/z_tuningfork/enqueue.py'
 #Takes song Zack is currently listening to and adds it to my playlist
 alias a="$MUSIC -zis"
 #Shows song Zack is listening to.
