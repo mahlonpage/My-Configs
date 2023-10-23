@@ -14,8 +14,12 @@ function cdclass() {
         "formal")
             cd ${COURSE_LOC}formal\ proof/fpv2023
             ;;
+        "music")
+            cd ${COURSE_LOC}musc\ 1210/
+            ;;
         *)
             echo "Error: Usage cdclass with arg1 = data, cyber, dl"
+            ;;
     esac
 }
 
@@ -29,4 +33,5 @@ function res()    {
 
 #Current Courses (but also opens vscode)
 alias formalc='formal; code .;'
+alias musc='cdclass music;'
 alias resc='res; code .;'
