@@ -28,7 +28,7 @@ function formal() {
 }
 
 function res()    {
-    cd ~/Documents/cs/curr_classes/research
+    cd ~/Documents/cs/research
 }
 
 #Current Courses (but also opens vscode)
