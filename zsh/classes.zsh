@@ -11,27 +11,24 @@ export COURSE_LOC=~/Documents/cs/classes/ #Course folder location
 function cdclass() {
     case $1 in
 
-        "formal")
-            cd ${COURSE_LOC}formal\ proof/fpv2023
-            ;;
-        "music")
-            cd ${COURSE_LOC}musc\ 1210/
+        "temp")
+            cd ${COURSE_LOC}temp
             ;;
         *)
-            echo "Error: Usage cdclass with arg1 = data, cyber, dl"
+            echo "Error: Usage cdclass with arg1 = PLACEHOLDER TEXT"
             ;;
     esac
 }
 
-function formal() {
-    cdclass formal
-}
+#function formal() {
+#    cdclass formal
+#}
 
 function res()    {
     cd ~/Documents/cs/research
 }
 
 #Current Courses (but also opens vscode)
-alias formalc='formal; code .;'
-alias musc='cdclass music;'
+#alias formalc='formal; code .;'
+#alias musc='cdclass music;'
 alias resc='res; code .;'
