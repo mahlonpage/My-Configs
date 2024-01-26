@@ -27,21 +27,14 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Update PATH with python and racket
+export PATH="/usr/local/bin/python3.12:$PATH"
+export PATH="/Applications/Racket\ v8.11.1/bin:$PATH"
+
 #Loads in zsh preferences from zsh folder (divided into files for ease of access)
 for config (~/dot-files/zsh/*.zsh) source $config
-
-#Enables vi and restores default non-vi search behavior after
-#bindkey ^R history-incremental-search-backward
-#bindkey ^S history-incremental-search-forward
-
 
 source /Users/mahlonpage/.docker/init-zsh.sh || true # Added by Docker Desktop

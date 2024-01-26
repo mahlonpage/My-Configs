@@ -1,17 +1,19 @@
 #My Aliases
 alias c='clear'
-alias cs='cd ~/Documents/cs/'
-alias p='python3'
+alias cs='cd ~/Documents/cs'
+alias p11='python3.11'
+alias p12='python3.12'
 alias myip='ifconfig -l | xargs -n1 ipconfig getifaddr'
 alias ls='lsd' #use lsd for pretty printing
 alias text='python3 /Users/mahlonpage/Documents/cs/active_projects/cli_text/main.py'
 alias venv='source ./venv/bin/activate'
+alias racket='/Applications/Racket\ v8.11.1/bin/racket'
 
 function regex()    {
     /usr/local/bin/python3 /Users/mahlonpage/Documents/cs/active_projects/rENGex/code/rENGex.py $@
 }
 
-PATH=~/bin:$PATH
+export PATH="~/bin:$PATH"
 
 #Enqueue
 MUSIC='/Users/mahlonpage/Documents/cs/active_projects/tuningfork/venv/bin/python3 /Users/mahlonpage/Documents/cs/active_projects/tuningfork/enqueue.py'
@@ -48,9 +50,6 @@ function z()    {
             ;;
         "p")
             vim ~/dot-files/zsh/personal.zsh
-            ;;
-        "conda")
-            vim ~/dot-files/zsh/conda.zsh
             ;;
         "ssh")
             vim ~/dot-files/zsh/ssh.zsh

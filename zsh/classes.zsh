@@ -9,21 +9,33 @@ function cdclass() {
         "temp")
             cd ${COURSE_LOC}temp
             ;;
+        "logic")
+            cd ${COURSE_LOC}1710
+            ;;
+        "agt")
+            cd ${COURSE_LOC}2440
+            ;;
         *)
             echo "Error: Usage cdclass with arg1 = PLACEHOLDER TEXT"
             ;;
     esac
 }
 
-#function formal() {
-#    cdclass formal
-#}
+function logic() {
+    cdclass "logic"
+    venv
+}
+
+function agt() {
+    cdclass "agt"
+    venv
+}
 
 function res()    {
     cd ~/Documents/cs/research
 }
 
 #Current Courses (but also opens vscode)
-#alias formalc='formal; code .;'
-#alias musc='cdclass music;'
+alias logicc='cdclass "logic"; code .;'
+alias agtc='cdclass "agt"; code .;'
 alias resc='res; code .;'
