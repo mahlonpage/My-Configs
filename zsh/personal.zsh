@@ -66,7 +66,6 @@ function z()    {
             echo "         norm (~/.zshrc)"
             echo "         ssh"
             echo "         vim"
-            echo "         conda"
             echo "         h (help)"
             ;;
         *)

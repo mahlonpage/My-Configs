@@ -36,6 +36,6 @@ function res()    {
 }
 
 #Current Courses (but also opens vscode)
-alias logicc='cdclass "logic"; code .;'
-alias agtc='cdclass "agt"; code .;'
+alias logicc='logic; code .;'
+alias agtc='agt; code .;'
 alias resc='res; code .;'
