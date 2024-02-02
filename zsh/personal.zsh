@@ -7,7 +7,6 @@ alias myip='ifconfig -l | xargs -n1 ipconfig getifaddr'
 alias ls='lsd' #use lsd for pretty printing
 alias text='python3 /Users/mahlonpage/Documents/cs/active_projects/cli_text/main.py'
 alias venv='source ./venv/bin/activate'
-alias racket='/Applications/Racket\ v8.11.1/bin/racket'
 
 function regex()    {
     /usr/local/bin/python3 /Users/mahlonpage/Documents/cs/active_projects/rENGex/code/rENGex.py $@

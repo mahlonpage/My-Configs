@@ -30,11 +30,12 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Update PATH with python and racket
-export PATH="/usr/local/bin/python3.12:$PATH"
-export PATH="/Applications/Racket\ v8.11.1/bin:$PATH"
+# Force path array to be unique making PATH not have duplicates
+typeset -U path PATH
+
+# Update PATH with necessary files
+export PATH="$PATH:/usr/local/bin/python3.12"
+export PATH="$PATH:/Applications/Racket/bin"
 
 #Loads in zsh preferences from zsh folder (divided into files for ease of access)
 for config (~/dot-files/zsh/*.zsh) source $config
-
-source /Users/mahlonpage/.docker/init-zsh.sh || true # Added by Docker Desktop
