@@ -32,10 +32,10 @@ function agt() {
 }
 
 function res()    {
-    cd ~/Documents/cs/research
+    cd ~/Documents/cs/research/code
 }
 
 #Current Courses (but also opens vscode)
 alias logicc='logic; code .;'
 alias agtc='agt; code .;'
-alias resc='res; code .;'
+alias resc='res; venv; code .;'
