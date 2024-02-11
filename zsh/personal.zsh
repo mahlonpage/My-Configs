@@ -12,8 +12,6 @@ function regex()    {
     /usr/local/bin/python3 /Users/mahlonpage/Documents/cs/active_projects/rENGex/code/rENGex.py $@
 }
 
-export PATH="~/bin:$PATH"
-
 #Enqueue
 MUSIC='/Users/mahlonpage/Documents/cs/active_projects/tuningfork/venv/bin/python3 /Users/mahlonpage/Documents/cs/active_projects/tuningfork/enqueue.py'
 #Takes song Zack is currently listening to and adds it to my playlist

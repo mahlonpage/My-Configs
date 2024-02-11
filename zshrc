@@ -34,6 +34,7 @@ source $ZSH/oh-my-zsh.sh
 typeset -U path PATH
 
 # Update PATH with necessary files
+export PATH="~/bin:$PATH"
 export PATH="$PATH:/usr/local/bin/python3.12"
 export PATH="$PATH:/Applications/Racket/bin"
 
