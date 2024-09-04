@@ -8,6 +8,9 @@ alias ls='lsd' #use lsd for pretty printing
 alias text='python3 /Users/mahlonpage/Documents/cs/active_projects/cli_text/main.py'
 alias venv='source ./venv/bin/activate'
 
+alias budget='source /Users/mahlonpage/Documents/cs/personal_finances/venv/bin/activate; p12 /Users/mahlonpage/Documents/cs/personal_finances/code/categorizing_game.py; def'
+alias categories='code /Users/mahlonpage/Documents/cs/personal_finances/data/categorizations.csv'
+
 function regex()    {
     /usr/local/bin/python3 /Users/mahlonpage/Documents/cs/active_projects/rENGex/code/rENGex.py $@
 }
