@@ -6,16 +6,13 @@ alias p11='python3.11'
 alias p12='python3.12'
 alias myip='ifconfig -l | xargs -n1 ipconfig getifaddr'
 alias ls='lsd' #use lsd for pretty printing
-alias text='python3 /Users/mahlonpage/Documents/cs/active_projects/cli_text/main.py'
+alias newpy='cd ~/Documents/cs/random; code temp.py; closeterm'
 alias venv='source ./venv/bin/activate'
 
+# My Tools
+alias text='python3 /Users/mahlonpage/Documents/cs/active_projects/cli_text/main.py'
 alias budget='source /Users/mahlonpage/Documents/cs/personal_finances/venv/bin/activate; p12 /Users/mahlonpage/Documents/cs/personal_finances/code/categorizing_game.py; def'
 alias categories='code /Users/mahlonpage/Documents/cs/personal_finances/data/categorizations.csv'
-alias newpy='cd ~/Documents/cs/random; code temp.py; closeterm'
-
-function regex()    {
-    /usr/local/bin/python3 /Users/mahlonpage/Documents/cs/active_projects/rENGex/code/rENGex.py $@
-}
 
 #Enqueue
 MUSIC='/Users/mahlonpage/Documents/cs/active_projects/tuningfork/venv/bin/python3 /Users/mahlonpage/Documents/cs/active_projects/tuningfork/enqueue.py'
@@ -44,6 +41,7 @@ function gall() {
   git push
 }
 
+# Handles going to zshell file configs
 function z()    {
     case "$1" in
 
