@@ -36,7 +36,7 @@ typeset -U path PATH
 # Update PATH with necessary files
 export PATH="~/bin:$PATH"
 export PATH="$PATH:/usr/local/bin/python3.12"
-export PATH="$PATH:/Applications/Racket/bin"
+export PATH="$PATH:/Applications/Racket v8.14/bin"
 
 #Loads in zsh preferences from zsh folder (divided into files for ease of access)
 for config (~/dot-files/zsh/*.zsh) source $config

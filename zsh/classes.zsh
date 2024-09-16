@@ -20,5 +20,9 @@ function cdclass() {
 #    venv
 #}
 
+function pl() {
+    drracket
+}
+
 #Current Courses (but also opens vscode)
 #alias logicc='logic; code .;'

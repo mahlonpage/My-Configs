@@ -1,4 +1,5 @@
 #My Aliases
+alias closeterm='~/dot-files/close_zshell_hotkey_window.sh'
 alias c='clear'
 alias cs='cd ~/Documents/cs'
 alias p11='python3.11'
@@ -10,6 +11,7 @@ alias venv='source ./venv/bin/activate'
 
 alias budget='source /Users/mahlonpage/Documents/cs/personal_finances/venv/bin/activate; p12 /Users/mahlonpage/Documents/cs/personal_finances/code/categorizing_game.py; def'
 alias categories='code /Users/mahlonpage/Documents/cs/personal_finances/data/categorizations.csv'
+alias newpy='cd ~/Documents/cs/random; code temp.py; closeterm'
 
 function regex()    {
     /usr/local/bin/python3 /Users/mahlonpage/Documents/cs/active_projects/rENGex/code/rENGex.py $@
