@@ -6,7 +6,7 @@ alias p11='python3.11'
 alias p12='python3.12'
 alias myip='ifconfig -l | xargs -n1 ipconfig getifaddr'
 alias ls='lsd' #use lsd for pretty printing
-alias newpy='cd ~/Documents/cs/random; code temp.py; closeterm'
+alias newpy='code ~/Documents/cs/random/temp.py; closeterm'
 alias venv='source ./venv/bin/activate'
 
 # My Tools
