@@ -21,7 +21,7 @@ function cdclass() {
 #}
 
 function pl() {
-    drracket
+   cd ~/Documents/cs/classes/pl/
 }
 
 #Current Courses (but also opens vscode)

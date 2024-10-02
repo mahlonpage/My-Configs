@@ -8,6 +8,7 @@ alias myip='ifconfig -l | xargs -n1 ipconfig getifaddr'
 alias ls='lsd' #use lsd for pretty printing
 alias newpy='code ~/Documents/cs/random/temp.py; closeterm'
 alias venv='source ./venv/bin/activate'
+alias makevenv='p12 -m venv ./venv'
 
 # My Tools
 alias text='python3 /Users/mahlonpage/Documents/cs/active_projects/cli_text/main.py'
