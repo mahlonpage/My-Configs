@@ -1,5 +1,5 @@
 #My Aliases
-alias closeterm='~/dot-files/close_zshell_hotkey_window.sh'
+alias closeterm='~/dot-files/shellscripts/close_zshell_hotkey_window.sh'
 alias c='clear'
 alias cs='cd ~/Documents/cs'
 alias p11='python3.11'
