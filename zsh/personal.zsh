@@ -6,14 +6,14 @@ alias p11='python3.11'
 alias p12='python3.12'
 alias myip='ifconfig -l | xargs -n1 ipconfig getifaddr'
 alias ls='lsd' #use lsd for pretty printing
-alias newpy='code ~/Documents/cs/random/temp.py; closeterm'
+alias newpy='code ~/Documents/cs/random/temp.py; sleep 1.5; closeterm'
 alias venv='source ./venv/bin/activate'
 alias makevenv='p12 -m venv ./venv'
 
 # My Tools
 alias text='python3 /Users/mahlonpage/Documents/cs/active_projects/cli_text/main.py'
-alias budget='source /Users/mahlonpage/Documents/cs/personal_finances/venv/bin/activate; p12 /Users/mahlonpage/Documents/cs/personal_finances/code/categorizing_game.py; def'
-alias categories='code /Users/mahlonpage/Documents/cs/personal_finances/data/categorizations.csv'
+alias budget='source /Users/mahlonpage/Documents/cs/active_projects/personal_finances/venv/bin/activate; p12 /Users/mahlonpage/Documents/cs/active_projects/personal_finances/code/categorizing_game.py; def'
+alias categories='code /Users/mahlonpage/Documents/cs/active_projects/personal_finances/data/categorizations.csv'
 
 #Enqueue
 MUSIC='/Users/mahlonpage/Documents/cs/active_projects/tuningfork/venv/bin/python3 /Users/mahlonpage/Documents/cs/active_projects/tuningfork/enqueue.py'

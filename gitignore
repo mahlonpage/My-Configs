@@ -8,3 +8,7 @@ __pycache__/
 .idea/
 .vscode/
 *~
+credentials.json
+token.json
+secrets.json
+secret.json
