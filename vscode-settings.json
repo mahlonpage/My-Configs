@@ -1,0 +1,30 @@
+{
+    "files.trimTrailingWhitespace": true,
+
+    // Window Settings
+    "window.restoreFullscreen": true,
+    "window.zoomLevel": 1, // Zooms to 110%
+
+    // Editor Cleanliness
+    "editor.linkedEditing": true,
+    "editor.minimap.enabled": false,
+    "editor.accessibilitySupport": "off",
+
+    // Intellisense & Recommendations
+    "editor.suggest.showSnippets": false,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false,
+    },
+    "editor.quickSuggestionsDelay": 300,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.tabCompletion": "on",
+
+    // Python specific settings
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "python.venvPath": "${workspaceFolder}/venv",
+}

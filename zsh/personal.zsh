@@ -7,6 +7,8 @@ alias p12='python3.12'
 alias myip='ifconfig -l | xargs -n1 ipconfig getifaddr'
 alias ls='lsd' #use lsd for pretty printing
 alias newpy='code ~/Documents/cs/random/temp.py; sleep 1.5; closeterm'
+
+# Venv creation/activation
 alias venv='source ./venv/bin/activate'
 alias makevenv='p12 -m venv ./venv'
 
