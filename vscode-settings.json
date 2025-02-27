@@ -11,16 +11,19 @@
     "editor.accessibilitySupport": "off",
 
     // Intellisense & Recommendations
-    "editor.suggest.showSnippets": false,
     "editor.quickSuggestions": {
-        "other": true,
-        "comments": false,
-        "strings": false,
+        "comments": "off",
+        "strings": "off",
+        "other": "off"
     },
+    "editor.suggest.showSnippets": false,
     "editor.quickSuggestionsDelay": 300,
+    "editor.quickSuggestions": false,
+    "editor.suggestOnTriggerCharacters": false,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.tabCompletion": "on",
+    "editor.parameterHints.enabled": false,
 
     // Python specific settings
     "[python]": {

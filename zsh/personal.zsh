@@ -8,6 +8,12 @@ alias myip='ifconfig -l | xargs -n1 ipconfig getifaddr'
 alias ls='lsd' #use lsd for pretty printing
 alias newpy='code ~/Documents/cs/random/temp.py; sleep 1.5; closeterm'
 
+# Resize terminal
+alias tsmall='resize_terminal 200'
+alias tmed='resize_terminal 320'
+alias tbig='resize_terminal 600'
+alias tfull='resize_terminal 900'
+
 # Venv creation/activation
 alias venv='source ./venv/bin/activate'
 alias makevenv='p12 -m venv ./venv'
@@ -42,6 +48,11 @@ function gall() {
   git add -A
   git commit -m "$([ "$1" != "" ] && echo "$1" || echo "minor tweak")"
   git push
+}
+
+# Resize the terminal window
+function resize_terminal() {
+    osascript -e "tell application \"iTerm2\" to tell current window to set bounds to {0, 24, 1440, $1}"
 }
 
 # Handles going to zshell file configs

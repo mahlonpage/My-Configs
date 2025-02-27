@@ -6,23 +6,30 @@ export COURSE_LOC=~/Documents/cs/classes/ #Course folder location
 function cdclass() {
     case $1 in
 
-#        "logic")
-#            cd ${COURSE_LOC}1710
-#            ;;
+        "ml")
+            cd ${COURSE_LOC}ml
+            ;;
+        "ai")
+            cd ${COURSE_LOC}ai
+            ;;
         *)
             echo "Error: Usage cdclass with arg1 = PLACEHOLDER TEXT"
             ;;
     esac
 }
 
-#function logic() {
-#    cdclass "logic"
-#    venv
-#}
+function ml() {
+    cdclass "ml"
+    venv
+    cd ./hw5-code-mahlonpage
+}
 
-function pl() {
-   cd ~/Documents/cs/classes/pl/
+function ai() {
+    cdclass "ai"
+    venv
+    cd ./hw4-constrained-optimization
 }
 
 #Current Courses (but also opens vscode)
-#alias logicc='logic; code .;'
+alias mlc='ml; code .'
+alias aic='ai; code .'
