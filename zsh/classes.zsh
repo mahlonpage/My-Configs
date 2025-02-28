@@ -27,7 +27,7 @@ function ml() {
 function ai() {
     cdclass "ai"
     venv
-    cd ./hw4-constrained-optimization
+    cd ./hw5-model-selection
 }
 
 #Current Courses (but also opens vscode)
