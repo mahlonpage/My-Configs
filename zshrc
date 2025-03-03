@@ -40,6 +40,3 @@ export PATH="$PATH:/Applications/Racket v8.14/bin"
 
 #Loads in zsh preferences from zsh folder (divided into files for ease of access)
 for config (~/dot-files/zsh/*.zsh) source $config
-
-# Now we can run any custom commands from there
-tmed

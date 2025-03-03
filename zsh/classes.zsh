@@ -21,7 +21,7 @@ function cdclass() {
 function ml() {
     cdclass "ml"
     venv
-    cd ./hw5-code-mahlonpage
+    cd ./hw6-code-mahlonpage
 }
 
 function ai() {
