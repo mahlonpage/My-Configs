@@ -8,6 +8,8 @@ alias myip='ifconfig -l | xargs -n1 ipconfig getifaddr'
 alias ls='lsd' #use lsd for pretty printing
 alias newpy='code ~/Documents/cs/random/temp.py; sleep 1.5; closeterm'
 
+alias harmonic='python3.12 ~/Documents/cs/active_projects/probability_and_cards/harmonic.py'
+
 # Resize terminal
 alias tsmall='resize_terminal 200'
 alias tmed='resize_terminal 320'
@@ -59,14 +61,8 @@ function resize_terminal() {
 function z()    {
     case "$1" in
 
-        "c")
-            vim ~/dot-files/zsh/classes.zsh
-            ;;
         "p")
             vim ~/dot-files/zsh/personal.zsh
-            ;;
-        "ssh")
-            vim ~/dot-files/zsh/ssh.zsh
             ;;
         "vim")
             vim ~/dot-files/zsh/vim.zsh
@@ -76,9 +72,7 @@ function z()    {
             ;;
         "h")
             echo "Options: p (personal)"
-            echo "         c (class)"
             echo "         norm (~/.zshrc)"
-            echo "         ssh"
             echo "         vim"
             echo "         h (help)"
             ;;
