@@ -6,35 +6,26 @@ alias p11='python3.11'
 alias p12='python3.12'
 alias myip='ifconfig -l | xargs -n1 ipconfig getifaddr'
 alias ls='lsd' #use lsd for pretty printing
-alias newpy='code ~/Documents/cs/random/temp.py; sleep 1.5; closeterm'
+alias newpy='code ~/Documents/cs/temp.py; sleep 1.5; closeterm'
 
-alias harmonic='python3.12 ~/Documents/cs/active_projects/probability_and_cards/harmonic.py'
+# Utilities
+alias harmonic='python3.12 ~/Documents/cs/probability_and_games/harmonic_number_calculation.py'
 
 # Resize terminal
 alias tsmall='resize_terminal 200'
 alias tmed='resize_terminal 320'
 alias tbig='resize_terminal 600'
-alias tfull='resize_terminal 900'
+alias tmax='resize_terminal 900'
 
 # Venv creation/activation
 alias venv='source ./venv/bin/activate'
 alias makevenv='p12 -m venv ./venv'
 
-# My Tools
-alias text='python3 /Users/mahlonpage/Documents/cs/active_projects/cli_text/main.py'
-alias budget='source /Users/mahlonpage/Documents/cs/active_projects/personal_finances/venv/bin/activate; p12 /Users/mahlonpage/Documents/cs/active_projects/personal_finances/code/categorizing_game.py; def'
-alias categories='code /Users/mahlonpage/Documents/cs/active_projects/personal_finances/data/categorizations.csv'
-
 #Enqueue
-MUSIC='/Users/mahlonpage/Documents/cs/active_projects/tuningfork/venv/bin/python3 /Users/mahlonpage/Documents/cs/active_projects/tuningfork/enqueue.py'
-#Takes song Zack is currently listening to and adds it to my playlist
-alias a="$MUSIC -z -s SHARED"
-#Shows song Zack is listening to.
-alias zack="$MUSIC -z"
-# Use tuning fork
-alias tune="$MUSIC"
-
-# My functions
+MUSIC='/Users/mahlonpage/Documents/cs/tuningfork/venv/bin/python3 /Users/mahlonpage/Documents/cs/active_projects/enqueue.py'
+alias a="$MUSIC -z -s SHARED" # Add current zack song to my playlist
+alias zack="$MUSIC -z" # Show current zack song
+alias tune="$MUSIC" # Use tuningfork
 
 # Restart terminal in ~/ and reset to default venv and conda
 function def()  {
